@@ -1,0 +1,15 @@
+void inicializar_sistema_base(int estado, bool forzar_inicio) {
+    int tiempo_espera = 500;
+    int IntentosMaximos = 3; 
+    string mensaje = "inicio";
+    return mensaje;
+}
+
+
+void zona_de_desastres(int p1) {
+    int variable_correcta = 10;
+    int sin_punto_coma = 20
+    int = 30; 
+    string mensaje_vacio = ; 
+    return p1
+}

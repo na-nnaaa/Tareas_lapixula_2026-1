@@ -1,0 +1,7 @@
+void reset() {
+    int x = 0;
+    int y = 0;
+    return x;
+}
+
+

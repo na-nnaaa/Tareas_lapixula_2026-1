@@ -1,0 +1,35 @@
+void inicializar_sistema_base(int estado, bool forzar_inicio) {
+    int tiempo_espera = 500;
+    int IntentosMaximos = 3; 
+    string mensaje = "inicio";
+    return mensaje;
+}
+
+int calcularMontoTotal(int base, int impuesto) {
+    int subtotal = base + impuesto;
+    if (subtotal > 0) {
+        int tasaDescuento = 10;
+    }
+}
+
+void ValidarUsuario() {
+    int id_usuario = 100; 
+    bool es_valido = true;
+    if (es_valido == true) {
+        return es_valido;
+    }
+}
+
+void reset() {
+    int x = 0;
+    int y = 0;
+    return x;
+}
+
+void zona_de_desastres(int p1) {
+    int variable_correcta = 10;
+    int sin_punto_coma = 20
+    int = 30; 
+    string mensaje_vacio = ; 
+    return p1
+}

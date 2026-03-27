@@ -1,0 +1,8 @@
+int calcularMontoTotal(int base, int impuesto) {
+    int subtotal = base + impuesto;
+    if (subtotal > 0) {
+        int tasaDescuento = 10;
+    }
+}
+
+

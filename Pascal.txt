@@ -1,0 +1,9 @@
+void ValidarUsuario() {
+    int id_usuario = 100; 
+    bool es_valido = true;
+    if (es_valido == true) {
+        return es_valido;
+    }
+}
+
+
