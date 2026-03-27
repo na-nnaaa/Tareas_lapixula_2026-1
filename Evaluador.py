@@ -51,9 +51,12 @@ declaracion_variable_erronea = rf"({error_tipo}|{error_nombre}|{error_valor})"
 def procesar_bloque(bloque, autor, stats, nombre_funcion):
     """
     ***
-    Parametros: bloque->string, autor->string, stats->diccionario, nombre_funcion->string
+    bloque : string
+    autor : string
+    stats : diccionario
+    nombre_funcion : string
     ***
-    Retorno: None
+    None
     ***
     Analiza el numero de llaves de una funcion.
     Escribe el bloque en el archivo del practicante correspondiente
@@ -99,12 +102,13 @@ def procesar_bloque(bloque, autor, stats, nombre_funcion):
 def identificar_autor(nombre):
     """
     ***
-    Parametros: nombre->string
+    nombre : string
     ***
-    Retorno: string
+    string
     ***
     Clasifica una funcion como Snake, Camel, Pascal o Desconocido basandose en las expresiones 
     regulares de las nomenclauturas definidas
+    Retorna el nombre del autor identificado
     """
     if re.fullmatch(snake_case, nombre):
         return "Snake"
@@ -118,9 +122,9 @@ def identificar_autor(nombre):
 def imprimir_reporte(stats):
     """
     ***
-    Parametros: stats->diccionario
+    stats : diccionario
     ***
-    Retorno: None
+    None
     ***
     Imprime el reporte final
     """
@@ -145,9 +149,9 @@ def imprimir_reporte(stats):
 def procesar_archivo():
     """
     ***
-    Parametros: None
+    None
     ***
-    Retorno: None
+    None
     ***
     Es el main()
     Lee el archivo fuente, segmenta las funciones encontradas en bloques individuales, gatilla el analisis e impresion del mensaje final
@@ -176,7 +180,6 @@ def procesar_archivo():
             limite_funcion = len(contenido) # Esto para el caso de la ultima funcion del documento
 
         bloque = contenido[inicio_funcion:limite_funcion] # Concatena hasta la linea anterior al inicio de la funcion
-
         procesar_bloque(bloque, autor, stats, nombre_funcion)
 
     imprimir_reporte(stats)
